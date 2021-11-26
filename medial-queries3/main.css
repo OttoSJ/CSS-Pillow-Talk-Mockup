@@ -1,3 +1,79 @@
+/* STARTER CODE */
+* {
+  border: 1px solid grey;
+}
+
+/* ********************************* */
 body {
   background: peachpuff;
+  text-align: center;
+  font-size: 170%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100vh;
+  border: 1px solid red;
+}
+
+header {
+  flex-grow: 1;
+  height: 10%;
+  margin: 9.5px;
+  border: 1px solid orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 3;
+  margin: 5px;
+}
+
+article,
+figcaption {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 3;
+  margin: 5px;
+  border: 1px solid blue;
+}
+
+article > div,
+figcaption > div {
+  flex-grow: 1;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 3;
+  margin: 9.5px;
+  border: 1px solid green;
+}
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+  }
+  header {
+    width: 100%;
+  }
+  main {
+    height: 85vh;
+  }
+  footer {
+    margin: 11px;
+  }
 }
