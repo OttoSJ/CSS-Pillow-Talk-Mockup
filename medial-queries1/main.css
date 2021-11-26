@@ -1,3 +1,52 @@
+* {
+  border: 1px solid grey;
+}
+
+div {
+  text-align: center;
+}
+
+/* STARTER  CODE */
+
 body {
   background: blanchedalmond;
+  margin: 1em;
+}
+
+/* CONTAINER *****************************/
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.a {
+  height: 18%;
+}
+
+.b {
+  height: 60%;
+}
+
+.c {
+  height: 18%;
+}
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .a {
+    width: 100%;
+  }
+  .b {
+    width: 80%;
+    height: 78%;
+  }
+  .c {
+    width: 18%;
+    height: 78%;
+  }
 }
